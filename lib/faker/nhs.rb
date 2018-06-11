@@ -1,5 +1,5 @@
 module Faker
-  class NHS < Base
+  class NationalHealthService < Base
     class << self
       def british_number
         base_number = rand(400_000_000...499_999_999)

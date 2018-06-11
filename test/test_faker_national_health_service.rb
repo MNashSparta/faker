@@ -1,8 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/test_helper.rb')
 
-class TestFakerNHS < Test::Unit::TestCase
+class TestFakerNationalHealthService < Test::Unit::TestCase
   def setup
-    @tester = Faker::NHS
+    @tester = Faker::NationalHealthService
   end
 
   def test_nhs_british_number
