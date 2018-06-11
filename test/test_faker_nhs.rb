@@ -5,8 +5,8 @@ class TestFakerNHS < Test::Unit::TestCase
     @tester = Faker::NHS
   end
 
-  def test_nhs_number_format
-    assert_match(/\A\d{3}\s\d{3}\s\d{4}\z/, @tester.nhs_number)
+  def test_nhs_british_number
+    assert_match(/\A\d{3}\s\d{3}\s\d{4}\z/, @tester.british_number)
   end
 
   def test_nhs_check_digit
